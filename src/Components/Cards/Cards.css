@@ -1,0 +1,24 @@
+.card {
+  width: 15rem;
+  background-color: #141414;
+  z-index: 1;
+}
+.vote {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .contents {
+  background-color: black;
+  opacity: 0.8;
+  display: block;
+}
+
+.contents {
+  display: none;
+}
