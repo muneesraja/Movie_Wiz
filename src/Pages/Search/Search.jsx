@@ -9,7 +9,7 @@ const Search = () => {
     console.log(movieName);
   }, [movieName]);
   return (
-    <div>
+    <div className="row">
       {movieName.searchMovie.map((data) => {
         return (
           <Card
