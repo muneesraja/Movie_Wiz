@@ -7,6 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 const Cardscontainer = ({ cardTitle, trendMovies }) => {
   const [windowWidth, setWindowWidth] = useState(6);
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setWindowWidth(3);
+    }
+  }, []);
+
   window.addEventListener("resize", (e) => {
     if (e.target.innerWidth < 768) {
       setWindowWidth(3);

@@ -36,11 +36,7 @@ const Navbar = () => {
               Movies
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/popular" className="nav-link text-white">
-              New & Popular
-            </Link>
-          </li>
+
           {!toggle ? (
             <li className="nav-item">
               <Link
